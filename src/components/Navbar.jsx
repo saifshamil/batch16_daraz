@@ -1,4 +1,4 @@
-
+import { RiShoppingCartLine } from "@remixicon/react";
 const Navbar = () => {
   return (
     <>
@@ -14,6 +14,7 @@ const Navbar = () => {
       <div className="flex">
         <img className=" w-40 h-30 -mt-7 ml-70" src="./images/logo.jfif" alt="logo" />
         <input placeholder="Search in daraz" className="bg-white w-200 ml-70 h-10 mt-6" type="text" />
+        <RiShoppingCartLine className="text-white w-10 h-10 mt-6 ml-5" />
       </div>
     </div>
  </> )
