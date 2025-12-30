@@ -13,11 +13,18 @@ const Carousel = () => {
     track.style.transform = `translateX(${offset}%)`
   }, [currentSlide])
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide(s => (s + 1) % totalSlides)
+    }, 2000)
+    return () => clearInterval(interval)
+  }, [totalSlides])
+
   const next = () => setCurrentSlide(s => (s + 1) % totalSlides)
   const prev = () => setCurrentSlide(s => (s - 1 + totalSlides) % totalSlides)
 
   return (
-    <div className="carousel-container relative w-[1700px] overflow-hidden ml-[230px]">
+    <div className="carousel-container relative w-[1700px] overflow-hidden ml-25">
       <div id="slide-track" ref={trackRef} className="flex transition-transform duration-500 ease-in-out">
 
         <div className="slide flex-shrink-0 w-full">
