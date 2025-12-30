@@ -16,7 +16,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide(s => (s + 1) % totalSlides)
-    }, 2000)
+    }, 1000)
     return () => clearInterval(interval)
   }, [totalSlides])
 
@@ -49,7 +49,11 @@ const Carousel = () => {
         className="absolute top-1/2 right-[30px] transform -translate-y-1/2 p-3 bg-black bg-opacity-50 text-white z-10 rounded-3xl">
         &#10095;
       </button>
+
+      <img className='mt-10 ml-70 w-300 h-50' src="./images/carousel4.webp" alt="" />
     </div>
+
+
   )
 }
 

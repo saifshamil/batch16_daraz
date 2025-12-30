@@ -2,7 +2,7 @@ import { RiShoppingCartLine } from "@remixicon/react";
 const Navbar = () => {
   return (
     <>
-    <div className="bg-[#F85605] h-30">
+    <div className="bg-[#FD431A] h-30">
       <ul className="flex justify-around pl-150">
         <li>SAVE MORE ON APP</li>
         <li>SELL ON DARAZ</li>
