@@ -50,7 +50,7 @@ const Carousel = () => {
         &#10095;
       </button>
 
-      <img className='mt-10 ml-70 w-300 h-50' src="./images/carousel4.webp" alt="" />
+      <img className='mt-10 ml-60 w-300 h-50' src="./images/carousel4.webp" alt="" />
     </div>
 
 
